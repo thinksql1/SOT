@@ -320,7 +320,7 @@
         
         .gallery-grid {
             display: grid;
-            /* Creates a nice mosaic feel */
+            /* Creates a nice mosaic feel, 4 across on large screens */
             grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
             gap: 0;
         }
@@ -330,6 +330,7 @@
             height: 350px;
             overflow: hidden;
             cursor: pointer;
+            background: #000; /* Fallback color */
         }
 
         .gallery-item img {
@@ -492,6 +493,7 @@
         /* --- MEDIA QUERIES --- */
         @media (max-width: 1024px) {
              .gallery-grid {
+                 /* 2 across on tablet */
                 grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
             }
         }
@@ -629,62 +631,89 @@
 
     <!-- GALLERY SECTION -->
     <section id="gallery" class="gallery">
-        <!-- 
-           Gallery organized by show vibe:
-           First 4: The "Blue/Purple/Atmospheric" Show
-           Next 4: The "Red/Warm/Energetic" Show
-        -->
         <div class="gallery-grid">
-            <!-- Blue Show Block -->
+            <!-- BLOCK 1: The Blue/Purple/Atmospheric Show (11 photos) -->
             <div class="gallery-item fade-in-section">
-                <img src="https://filedn.com/l3dxEBhJeAeb3qud0LuwFI4/SOT/012.jpg" alt="Singer dramatic pose">
-                <div class="gallery-overlay">
-                    <h3>Encounters</h3>
-                </div>
+                <img src="https://filedn.com/l3dxEBhJeAeb3qud0LuwFI4/SOT/012.jpg" loading="lazy" alt="Sons of Thunder Live">
+                <div class="gallery-overlay"><h3>Encounters</h3></div>
             </div>
             <div class="gallery-item fade-in-section">
-                <img src="https://filedn.com/l3dxEBhJeAeb3qud0LuwFI4/SOT/018.jpg" alt="Singer intense closeup">
-                <div class="gallery-overlay">
-                    <h3>Passion</h3>
-                </div>
+                <img src="https://filedn.com/l3dxEBhJeAeb3qud0LuwFI4/SOT/018.jpg" loading="lazy" alt="Sons of Thunder Live">
+                <div class="gallery-overlay"><h3>Passion</h3></div>
             </div>
              <div class="gallery-item fade-in-section">
-                <img src="https://filedn.com/l3dxEBhJeAeb3qud0LuwFI4/SOT/011.jpg" alt="Guitarist silhouette purple light">
-                <div class="gallery-overlay">
-                    <h3>Atmosphere</h3>
-                </div>
+                <img src="https://filedn.com/l3dxEBhJeAeb3qud0LuwFI4/SOT/011.jpg" loading="lazy" alt="Sons of Thunder Live">
+                <div class="gallery-overlay"><h3>Atmosphere</h3></div>
             </div>
             <div class="gallery-item fade-in-section">
-                <img src="https://filedn.com/l3dxEBhJeAeb3qud0LuwFI4/SOT/020.jpg" alt="Wide band shot blue light">
-                <div class="gallery-overlay">
-                    <h3>The Sound</h3>
-                </div>
+                <img src="https://filedn.com/l3dxEBhJeAeb3qud0LuwFI4/SOT/020.jpg" loading="lazy" alt="Sons of Thunder Live">
+                <div class="gallery-overlay"><h3>The Sound</h3></div>
+            </div>
+            <div class="gallery-item fade-in-section">
+                <img src="https://filedn.com/l3dxEBhJeAeb3qud0LuwFI4/SOT/013.jpg" loading="lazy" alt="Sons of Thunder Live">
+                <div class="gallery-overlay"><h3>Worship</h3></div>
+            </div>
+            <div class="gallery-item fade-in-section">
+                <img src="https://filedn.com/l3dxEBhJeAeb3qud0LuwFI4/SOT/014.jpg" loading="lazy" alt="Sons of Thunder Live">
+                <div class="gallery-overlay"><h3>Presence</h3></div>
+            </div>
+            <div class="gallery-item fade-in-section">
+                <img src="https://filedn.com/l3dxEBhJeAeb3qud0LuwFI4/SOT/016.jpg" loading="lazy" alt="Sons of Thunder Live">
+                <div class="gallery-overlay"><h3>Connection</h3></div>
+            </div>
+            <div class="gallery-item fade-in-section">
+                <img src="https://filedn.com/l3dxEBhJeAeb3qud0LuwFI4/SOT/017.jpg" loading="lazy" alt="Sons of Thunder Live">
+                <div class="gallery-overlay"><h3>Brotherhood</h3></div>
+            </div>
+             <div class="gallery-item fade-in-section">
+                <img src="https://filedn.com/l3dxEBhJeAeb3qud0LuwFI4/SOT/015.jpg" loading="lazy" alt="Sons of Thunder Live">
+                <div class="gallery-overlay"><h3>Unity</h3></div>
+            </div>
+            <div class="gallery-item fade-in-section">
+                <img src="https://filedn.com/l3dxEBhJeAeb3qud0LuwFI4/SOT/019.jpg" loading="lazy" alt="Sons of Thunder Live">
+                <div class="gallery-overlay"><h3>Light</h3></div>
+            </div>
+            <div class="gallery-item fade-in-section">
+                <img src="https://filedn.com/l3dxEBhJeAeb3qud0LuwFI4/SOT/010.jpg" loading="lazy" alt="Sons of Thunder Live">
+                <div class="gallery-overlay"><h3>Cinematic</h3></div>
             </div>
 
-            <!-- Red Show Block -->
+            <!-- BLOCK 2: The Red/Warm/Energetic Show (9 photos) -->
             <div class="gallery-item fade-in-section">
-                <img src="https://filedn.com/l3dxEBhJeAeb3qud0LuwFI4/SOT/009.jpg" alt="Wide band shot red light crowd">
-                <div class="gallery-overlay">
-                    <h3>Live Energy</h3>
-                </div>
+                <img src="https://filedn.com/l3dxEBhJeAeb3qud0LuwFI4/SOT/009.jpg" loading="lazy" alt="Sons of Thunder Live">
+                <div class="gallery-overlay"><h3>Live Energy</h3></div>
             </div>
             <div class="gallery-item fade-in-section">
-                <img src="https://filedn.com/l3dxEBhJeAeb3qud0LuwFI4/SOT/003.jpg" alt="Guitarist singing red light">
-                <div class="gallery-overlay">
-                    <h3>Ministry</h3>
-                </div>
+                <img src="https://filedn.com/l3dxEBhJeAeb3qud0LuwFI4/SOT/003.jpg" loading="lazy" alt="Sons of Thunder Live">
+                <div class="gallery-overlay"><h3>Ministry</h3></div>
             </div>
             <div class="gallery-item fade-in-section">
-                <img src="https://filedn.com/l3dxEBhJeAeb3qud0LuwFI4/SOT/007.jpg" alt="Drummer red light">
-                <div class="gallery-overlay">
-                    <h3>Rhythm</h3>
-                </div>
+                <img src="https://filedn.com/l3dxEBhJeAeb3qud0LuwFI4/SOT/007.jpg" loading="lazy" alt="Sons of Thunder Live">
+                <div class="gallery-overlay"><h3>Rhythm</h3></div>
             </div>
             <div class="gallery-item fade-in-section">
-                <img src="https://filedn.com/l3dxEBhJeAeb3qud0LuwFI4/SOT/001.jpg" alt="Full band wide red light">
-                <div class="gallery-overlay">
-                    <h3>Sons of Thunder</h3>
-                </div>
+                <img src="https://filedn.com/l3dxEBhJeAeb3qud0LuwFI4/SOT/001.jpg" loading="lazy" alt="Sons of Thunder Live">
+                <div class="gallery-overlay"><h3>The Band</h3></div>
+            </div>
+            <div class="gallery-item fade-in-section">
+                <img src="https://filedn.com/l3dxEBhJeAeb3qud0LuwFI4/SOT/002.jpg" loading="lazy" alt="Sons of Thunder Live">
+                <div class="gallery-overlay"><h3>Impact</h3></div>
+            </div>
+            <div class="gallery-item fade-in-section">
+                <img src="https://filedn.com/l3dxEBhJeAeb3qud0LuwFI4/SOT/004.jpg" loading="lazy" alt="Sons of Thunder Live">
+                <div class="gallery-overlay"><h3>Focus</h3></div>
+            </div>
+             <div class="gallery-item fade-in-section">
+                <img src="https://filedn.com/l3dxEBhJeAeb3qud0LuwFI4/SOT/005.jpg" loading="lazy" alt="Sons of Thunder Live">
+                <div class="gallery-overlay"><h3>Moment</h3></div>
+            </div>
+            <div class="gallery-item fade-in-section">
+                <img src="https://filedn.com/l3dxEBhJeAeb3qud0LuwFI4/SOT/006.jpg" loading="lazy" alt="Sons of Thunder Live">
+                <div class="gallery-overlay"><h3>Serve</h3></div>
+            </div>
+            <div class="gallery-item fade-in-section">
+                <img src="https://filedn.com/l3dxEBhJeAeb3qud0LuwFI4/SOT/008.jpg" loading="lazy" alt="Sons of Thunder Live">
+                <div class="gallery-overlay"><h3>Power</h3></div>
             </div>
         </div>
     </section>
@@ -766,7 +795,10 @@
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('is-visible');
-                    observer.unobserve(entry.target); 
+                    // observer.unobserve(entry.target); // Keep observing for repeated fade effects on scroll up/down
+                } else {
+                     // Optional: Fade out when scrolling past
+                    entry.target.classList.remove('is-visible');
                 }
             });
         }, observerOptions);
